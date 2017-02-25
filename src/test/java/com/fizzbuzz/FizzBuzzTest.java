@@ -16,15 +16,19 @@ public class FizzBuzzTest {
 
     @Test
     public void fizzBuzzOfTwoIsTwo() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.convert(2);
+        String result = underTest.convert(2);
         assertThat(result, is("2"));
     }
 
     @Test
     public void fizzBuzzOfThreeIsFizz() {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        String result = fizzBuzz.convert(3);
+        String result = underTest.convert(3);
         assertThat(result, is("Fizz"));
+    }
+
+    @Test
+    public void fizzBuzzOfFiveIsBuzz() {
+        String result = underTest.convert(5);
+        assertThat(result, is("Buzz"));
     }
 }
