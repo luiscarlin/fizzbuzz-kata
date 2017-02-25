@@ -3,12 +3,20 @@ package com.fizzbuzz;
 public class FizzBuzz {
 
     public String convert(int input) {
+        String result = "";
+
         if (input % 3 == 0) {
-            return "Fizz";
+            result += "Fizz";
         }
+
         if (input % 5 == 0) {
-            return "Buzz";
+            result += "Buzz";
         }
-        return "2";
+
+        if (result.length() == 0) {
+            result = String.valueOf(input);
+        }
+
+        return result;
     }
 }

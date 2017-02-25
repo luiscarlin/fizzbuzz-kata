@@ -43,4 +43,10 @@ public class FizzBuzzTest {
         String result = underTest.convert(10);
         assertThat(result, is("Buzz"));
     }
+
+    @Test
+    public void fizzBuzzOfFifteenIsFizzBuzz() throws Exception {
+        String result = underTest.convert(15);
+        assertThat(result, is("FizzBuzz"));
+    }
 }
