@@ -6,7 +6,7 @@
 ./gradlew clean build
 ```
 
-## Resports
+## Reports
 
 | Name    | Path                                          |
 | ------- |:---------------------------------------------:|
