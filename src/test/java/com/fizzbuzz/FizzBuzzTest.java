@@ -12,4 +12,11 @@ public class FizzBuzzTest {
         String result = fizzBuzz.convert(2);
         assertThat(result, is("2"));
     }
+
+    @Test
+    public void fizzBuzzOfThreeIsFizz() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.convert(3);
+        assertThat(result, is("Fizz"));
+    }
 }
