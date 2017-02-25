@@ -31,4 +31,10 @@ public class FizzBuzzTest {
         String result = underTest.convert(5);
         assertThat(result, is("Buzz"));
     }
+
+    @Test
+    public void fizzBuzzOfSixIsFizz() {
+        String result = underTest.convert(6);
+        assertThat(result, is("Fizz"));
+    }
 }

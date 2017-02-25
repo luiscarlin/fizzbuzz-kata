@@ -3,7 +3,7 @@ package com.fizzbuzz;
 public class FizzBuzz {
 
     public String convert(int input) {
-        if (input == 3) {
+        if (input % 3 == 0) {
             return "Fizz";
         }
         if (input == 5) {
